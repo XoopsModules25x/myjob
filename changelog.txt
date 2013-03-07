@@ -1,0 +1,4 @@
+06/01/2006 - Renommage des fichiers contenant _ en -
+07/12/2006 - Ajout d'un champ image aux tables Situation de famille, Types de poste, Zones géographiques, Secteur d'activité et Rémunération
+09/12/2006 - Ajout d'un système de caddy (avec utilisation d'ajax)
+18/12/2006 - Renommage de certains fichiers (demandefly.php => demande_fly.php, view_demande.php => demande_view.php)
