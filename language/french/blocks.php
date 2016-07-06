@@ -17,16 +17,15 @@
 //                                                                           //
 //  ------------------------------------------------------------------------ //
 
-define("_MB_MYJOB_ORDER","Ordre");
-define("_MB_MYJOB_DATE","Date de publication");
-define("_MB_MYJOB_HITS","Nombre de lectures");
-define("_MB_MYJOB_DISP","Affichage");
-define("_MB_MYJOB_ELEMENTS","&eacute;l&eacute;ments");
-define("_MB_MYJOB_CHARS","Longueur du titre");
-define("_MB_MYJOB_LENGTH"," caract&egrave;res");
-define("_MB_MYJOB_TEASER", "Longueur du texte (0 pour ne pas avoir de texte)");
-define("_MB_MYJOB_WHAT2SEE", "Que souhaitez vous voir ?");
-define("_MB_MYJOB_SORT_BY", "Trier par");
-define("_MB_MYJOB_SORT_BY_LIB", "libellé");
-define("_MB_MYJOB_SORT_BY_COUNTER", "compteur");
-?>
+define('_MB_MYJOB_ORDER', 'Ordre');
+define('_MB_MYJOB_DATE', 'Date de publication');
+define('_MB_MYJOB_HITS', 'Nombre de lectures');
+define('_MB_MYJOB_DISP', 'Affichage');
+define('_MB_MYJOB_ELEMENTS', '&eacute;l&eacute;ments');
+define('_MB_MYJOB_CHARS', 'Longueur du titre');
+define('_MB_MYJOB_LENGTH', ' caract&egrave;res');
+define('_MB_MYJOB_TEASER', 'Longueur du texte (0 pour ne pas avoir de texte)');
+define('_MB_MYJOB_WHAT2SEE', 'Que souhaitez vous voir ?');
+define('_MB_MYJOB_SORT_BY', 'Trier par');
+define('_MB_MYJOB_SORT_BY_LIB', 'libellï¿½');
+define('_MB_MYJOB_SORT_BY_COUNTER', 'compteur');

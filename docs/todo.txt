@@ -1,0 +1,9 @@
+TO DO (original by Hervet)
+===========================
+
+- Add the possibility to have an image by business (and why not by geography)
+- FOAF
+- CSV export: same (it gives me the idea of a statistical index page on the entire base, including obsolete: the most demanded areas, offered more sectors, the most popular regions, most proposed regions, number of hits, etc ...)
+- Headers clickable to sort columns (in lists)
+- Possible Filtering of visual lists
+- Page comparison of several offers and / or claims with a shopping cart system as on e-commerce sites

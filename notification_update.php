@@ -5,7 +5,7 @@
 //                     <http://www.instant-zero.com/>                        //
 // ------------------------------------------------------------------------- //
 //  This program is NOT free software; you can NOT redistribute it and/or    //
-//  modify without my assent.   										     //
+//  modify without my assent.                                                //
 //                                                                           //
 //  You may not change or alter any portion of this comment or credits       //
 //  of supporting developers from this source code or any supporting         //
@@ -17,6 +17,5 @@
 //                                                                           //
 //  ------------------------------------------------------------------------ //
 
-include_once '../../mainfile.php';
-include_once XOOPS_ROOT_PATH.'/include/notification_update.php';
-?>
+include_once __DIR__ . '/../../mainfile.php';
+include_once XOOPS_ROOT_PATH . '/include/notification_update.php';

@@ -1,7 +1,0 @@
-- Ajouter la possiblité d'avoir une image par secteur d'activité (et pourquoi pas par secteur géographique)
-- FOAF
-- export csv : idem (ça me donne l'idée d'une page index de statistiques sur toute la base,yc les périmés : secteurs les plus demandés, secteurs les plus proposés, régions les plus recherchées, régions les plus proposées, nombre de hits moyens, etc...)
-- Entêtes de colonnes cliquables pour tri (dans les listes)
-- Filtrage possible dès la visu des listes
-- Page de comparaison de plusieurs offres et/ou de plusieurs demandes avec un système de panier comme sur les sites de e-commerce
-

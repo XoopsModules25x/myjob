@@ -1,20 +1,20 @@
 Bonjour,
 
-La demande d'emploi n°{DEMANDID} que vous nous avez soumis a été publiée sur notre site.
-Vous pouvez la visualiser à cette adresse :
+La demande d'emploi nÂ°{DEMANDID} que vous nous avez soumis a Ã©tÃ© publiÃ©e sur notre site.
+Vous pouvez la visualiser Ã  cette adresse :
 {URL_DEMAND}
 
-Vous avez la possibilité de gérer votre demande d'emploi sur notre site internet.
-Si vous souhaitez par exemple la supprimer, la modifier ou demander une prolongation de sa durée,
-rendez vous à cette adresse :
+Vous avez la possibilitÃ© de gÃ©rer votre demande d'emploi sur notre site internet.
+Si vous souhaitez par exemple la supprimer, la modifier ou demander une prolongation de sa durÃ©e,
+rendez vous Ã  cette adresse :
 {MANAGE_URL}
 
-Pour gérer votre offre d'emploi, un mot de passe a été automatiquement généré et vous sera
-demandé, ne le perdez pas : {PASSWORD}
+Pour gÃ©rer votre offre d'emploi, un mot de passe a Ã©tÃ© automatiquement gÃ©nÃ©rÃ© et vous sera
+demandÃ©, ne le perdez pas : {PASSWORD}
 
 Nous vous remercions de cette demande d'emploi.
 
 
-A bientôt,
-Toute l'équipe du site {X_SITENAME} ({X_SITEURL})
+A bientÃ´t,
+Toute l'Ã©quipe du site {X_SITENAME} ({X_SITEURL})
 Le webmaster {X_ADMINMAIL}
