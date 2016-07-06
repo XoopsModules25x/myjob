@@ -5,7 +5,7 @@
 //                     <http://www.instant-zero.com/>                        //
 // ------------------------------------------------------------------------- //
 //  This program is NOT free software; you can NOT redistribute it and/or    //
-//  modify without my assent.   										     //
+//  modify without my assent.                                                //
 //                                                                           //
 //  You may not change or alter any portion of this comment or credits       //
 //  of supporting developers from this source code or any supporting         //
@@ -17,16 +17,15 @@
 //                                                                           //
 //  ------------------------------------------------------------------------ //
 
-define("_MB_MYJOB_ORDER","Ordre");
-define("_MB_MYJOB_DATE","Date de publication");
-define("_MB_MYJOB_HITS","Nombre de lectures");
-define("_MB_MYJOB_DISP","Affichage");
-define("_MB_MYJOB_ELEMENTS","&eacute;l&eacute;ments");
-define("_MB_MYJOB_CHARS","Longueur du titre");
-define("_MB_MYJOB_LENGTH"," caract&egrave;res");
-define("_MB_MYJOB_TEASER", "Longueur du texte (0 pour ne pas avoir de texte)");
-define("_MB_MYJOB_WHAT2SEE", "Que souhaitez vous voir ?");
-define("_MB_MYJOB_SORT_BY", "Trier par");
-define("_MB_MYJOB_SORT_BY_LIB", "libellé");
-define("_MB_MYJOB_SORT_BY_COUNTER", "compteur");
-?>
+define('_MB_MYJOB_ORDER', 'Order');
+define('_MB_MYJOB_DATE', 'Date');
+define('_MB_MYJOB_HITS', 'Hits');
+define('_MB_MYJOB_DISP', 'View');
+define('_MB_MYJOB_ELEMENTS', 'Elements');
+define('_MB_MYJOB_CHARS', 'Length of title');
+define('_MB_MYJOB_LENGTH', 'Characters');
+define('_MB_MYJOB_TEASER', 'Text length (0 for no text)');
+define('_MB_MYJOB_WHAT2SEE', 'What would you like to see?');
+define('_MB_MYJOB_SORT_BY', 'Sort by');
+define('_MB_MYJOB_SORT_BY_LIB', 'Title');
+define('_MB_MYJOB_SORT_BY_COUNTER', 'Counter');

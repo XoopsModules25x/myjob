@@ -1,11 +1,11 @@
 Bonjour,
 
-L'offre d'emploi que vous nous avez soumis a été publiée sur notre site.
-Vous pouvez la visualiser à cette adresse :
+L'offre d'emploi que vous nous avez soumis a Ã©tÃ© publiÃ©e sur notre site.
+Vous pouvez la visualiser Ã  cette adresse :
 {URL_OFFER}
 
 Nous vous remercions de cette offre.
 
-A bientôt,
-Toute l'équipe du site {X_SITENAME} ({X_SITEURL})
+A bientÃ´t,
+Toute l'Ã©quipe du site {X_SITENAME} ({X_SITEURL})
 Le webmaster {X_ADMINMAIL}

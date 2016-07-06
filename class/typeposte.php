@@ -5,7 +5,7 @@
 //                     <http://www.instant-zero.com/>                        //
 // ------------------------------------------------------------------------- //
 //  This program is NOT free software; you can NOT redistribute it and/or    //
-//  modify without my assent.   										     //
+//  modify without my assent.                                                //
 //                                                                           //
 //  You may not change or alter any portion of this comment or credits       //
 //  of supporting developers from this source code or any supporting         //
@@ -17,57 +17,53 @@
 //                                                                           //
 //  ------------------------------------------------------------------------ //
 
-if (!defined('XOOPS_ROOT_PATH')) {
-	die('XOOPS root path not defined');
-}
+defined('XOOPS_ROOT_PATH') || exit('XOOPS root path not defined');
 
-include_once XOOPS_ROOT_PATH.'/class/xoopsobject.php';
+include_once XOOPS_ROOT_PATH . '/kernel/object.php';
 if (!class_exists('MjXoopsPersistableObjectHandler')) {
-	include_once XOOPS_ROOT_PATH.'/modules/myjob/class/PersistableObjectHandler.php';
+    include_once XOOPS_ROOT_PATH . '/modules/myjob/class/PersistableObjectHandler.php';
 }
-
 
 class typeposte extends MjObject
 {
-	function typeposte()
-	{
-		$this->initVar('typeid',XOBJ_DTYPE_INT,null,false);
-		$this->initVar('libelle',XOBJ_DTYPE_TXTBOX, null, false);
-		$this->initVar('image',XOBJ_DTYPE_TXTBOX, null, false);
-	}
+    public function __construct()
+    {
+        $this->initVar('typeid', XOBJ_DTYPE_INT, null, false);
+        $this->initVar('libelle', XOBJ_DTYPE_TXTBOX, null, false);
+        $this->initVar('image', XOBJ_DTYPE_TXTBOX, null, false);
+    }
 }
 
 class MyjobTypeposteHandler extends MjXoopsPersistableObjectHandler
 {
-	function MyjobTypeposteHandler($db)
-	{	//											Table				Classe		Id
-		$this->MjXoopsPersistableObjectHandler($db, 'myjob_typeposte', 'typeposte', 'typeid');
-	}
+    public function __construct($db)
+    {    //                                         Table               Classe      Id
+        parent::__construct($db, 'myjob_typeposte', 'typeposte', 'typeid');
+    }
 
+    public function delete(XoopsObject $typeposte, $force = false)
+    {
+        if (get_class($typeposte) !== 'typeposte') {
+            return false;
+        }
 
-	function delete(&$typeposte, $force = false)
-	{
-		if (get_class($typeposte) != 'typeposte') {
-			return false;
-		}
+		// VÃ©rification, est-ce que ce type de poste n'est pas utilisÃ© dans les demandes ?
+        $sql   = 'SELECT count(*) as cpt FROM ' . $this->db->prefix('myjob_demande') . ' WHERE typeposte=' . $typeposte->getVar('typeid');
+        $myrow = $this->db->fetchArray($this->db->query($sql));
+        if ($myrow['cpt'] > 0) {
+            return false;
+        }
 
-		// Vérification, est-ce que ce type de poste n'est pas utilisé dans les demandes ?
-		$sql='SELECT count(*) as cpt FROM '.$this->db->prefix('myjob_demande').' WHERE typeposte='.$typeposte->getVar('typeid');
-		$myrow = $this->db->fetchArray($this->db->query($sql));
-		if($myrow['cpt']>0) {
-			return false;
-		}
+        $sql = sprintf('DELETE FROM %s WHERE typeid = %u', $this->db->prefix('myjob_typeposte'), $typeposte->getVar('typeid'));
+        if (false != $force) {
+            $result = $this->db->queryF($sql);
+        } else {
+            $result = $this->db->query($sql);
+        }
+        if (!$result) {
+            return false;
+        }
 
-		$sql = sprintf("DELETE FROM %s WHERE typeid = %u", $this->db->prefix('myjob_typeposte'), $typeposte->getVar('typeid'));
-		if (false != $force) {
-			$result = $this->db->queryF($sql);
-		} else {
-			$result = $this->db->query($sql);
-		}
-		if (!$result) {
-			return false;
-		}
-		return true;
-	}
+        return true;
+    }
 }
-?>
