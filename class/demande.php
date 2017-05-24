@@ -336,7 +336,7 @@ class MyjobDemandeHandler extends MjXoopsPersistableObjectHandler
     public function getTopTypeContrat($limit = 0, $start = 0, $orderby = 'cpt', $desc = '')
     {
         $ret = array();
-        $ts  =& MyTextSanitizer::getInstance();
+        $ts  = MyTextSanitizer::getInstance();
         $sql = 'SELECT COUNT(*) AS cpt, d.typeposte, t.libelle FROM ' . $this->db->prefix('myjob_demande') . ' d LEFT OUTER JOIN ' . $this->db->prefix('myjob_typeposte') . ' t ON d.typeposte= t.typeid WHERE d.datevalidation<>0 AND d.dateexpiration > ' . time() . ' GROUP BY d.typeposte ORDER BY '
                . $orderby . ' ' . $desc;
 

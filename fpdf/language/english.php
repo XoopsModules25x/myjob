@@ -99,7 +99,7 @@ $pdf_config['font']['footer'] = array(
 	);
 
 if(!isset($myts)) {
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
 }
 
 $pdf_config['action_on_error'] = 0; // 0 - continue; 1 - die

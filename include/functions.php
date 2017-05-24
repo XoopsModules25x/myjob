@@ -446,7 +446,7 @@ function myjob_send_email_from_tpl($tpl_name, $recipients, $subject, $variables,
     global $xoopsConfig;
     include_once XOOPS_ROOT_PATH . '/class/xoopsmailer.php';
     if (function_exists('xoops_getMailer')) {
-        $xoopsMailer =& xoops_getMailer();
+        $xoopsMailer = xoops_getMailer();
     } else {
         $xoopsMailer =& getMailer();
     }
