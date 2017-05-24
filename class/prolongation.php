@@ -47,7 +47,7 @@ class MyjobprolongationHandler extends MjXoopsPersistableObjectHandler
     {
         $critere           = new Criteria('demandid', $id, '=');
         $tbl_prolongations = array();
-        $tbl_prolongations =& $this->getObjects($critere);
+        $tbl_prolongations = $this->getObjects($critere);
         if (count($tbl_prolongations) > 0) {
             $prolongation = $tbl_prolongations[0];
 

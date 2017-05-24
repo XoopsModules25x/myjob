@@ -82,7 +82,7 @@ if (myjob_getmoduleoption('anonymousdemandcontact') || $authorized) {
         $adminMessage .= "\n" . $_SERVER['HTTP_USER_AGENT'] . "\n";
         $subject = $xoopsConfig['sitename'] . ' - ' . $myts->htmlSpecialChars($xoopsModule->name()) . ' - ' . _MYJOB_DEMANDS . ' - ' . _MYJOB_CONTACT_DEMAND;
         if (function_exists('xoops_getMailer')) {
-            $xoopsMailer =& xoops_getMailer();
+            $xoopsMailer = xoops_getMailer();
         } else {
             $xoopsMailer =& getMailer();
         }

@@ -134,7 +134,7 @@ class MjXoopsPersistableObjectHandler extends XoopsObjectHandler
             $criteria = new Criteria($this->keyName, (int)$id, '=');
         }
         $criteria->setLimit(1);
-        $obj_array =& $this->getObjects($criteria, false, $as_object);
+        $obj_array = $this->getObjects($criteria, false, $as_object);
         if (count($obj_array) != 1) {
             $ret = null;
         } else {

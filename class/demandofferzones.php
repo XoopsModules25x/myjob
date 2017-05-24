@@ -46,7 +46,7 @@ class MyjobDemandofferzonesHandler extends MjXoopsPersistableObjectHandler
     public function getLibsWithRelation($criteria = null, $id_as_key = false)
     {
         $ret   = array();
-        $ts    =& MyTextSanitizer::getInstance();
+        $ts    = MyTextSanitizer::getInstance();
         $limit = $start = 0;
         $sql   = 'SELECT r.*, z.* FROM ' . $this->db->prefix('myjob_demandofferzones') . ' r, ' . $this->db->prefix('myjob_zonegeographique') . ' z';
         if (isset($criteria) && is_subclass_of($criteria, 'criteriaelement')) {
@@ -109,7 +109,7 @@ class MyjobDemandofferzonesHandler extends MjXoopsPersistableObjectHandler
     public function getTop($type = 'demandes', $limit = 0, $start = 0, $orderby = 'cpt', $desc = '')
     {
         $ret = array();
-        $ts  =& MyTextSanitizer::getInstance();
+        $ts  = MyTextSanitizer::getInstance();
         if ($type === 'demandes') {
             $field = 'demandid';
         } else {

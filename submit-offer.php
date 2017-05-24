@@ -83,7 +83,7 @@ switch ($op) {
                 $offre->setVar('online', (int)$_POST['online']);
                 if ((int)$_POST['online'] == 1 && xoops_trim($offre->getVar('email')) != '') {    // Notify the author of the publication
                     if (function_exists('xoops_getMailer')) {
-                        $xoopsMailer =& xoops_getMailer();
+                        $xoopsMailer = xoops_getMailer();
                     } else {
                         $xoopsMailer =& getMailer();
                     }
